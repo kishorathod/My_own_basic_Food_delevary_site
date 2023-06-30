@@ -1,0 +1,235 @@
+/* Re seting the css properties */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/* Navigation bar  */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  height: 54px;
+  }
+
+/* Navigation bar: logo and  img */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  margin: 5px 6px;
+  width: 54px;
+  height: 52px;
+}
+
+/* Navigation bar: list styling */
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 3px 12px;
+  text-decoration: none;
+  margin: 4px 10px;
+  color: white;
+  border-radius: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar ul li a:hover {
+  background: white;
+  color: black;
+}
+
+#navbar::before {
+  content: '';
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+}
+
+/* Home section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 180px;
+  color: white;
+  height: 449px;
+}
+
+#home::before {
+  content: '';
+  background: url('../bg1.jpg') no-repeat center center/cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.89;
+  height:633px;
+  width: 100%;
+}
+
+#home h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.9rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#home p {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.6rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Services section  */
+
+#services {
+  display: flex;
+  margin: 34px;
+}
+.services-container{
+  background: rgb(227, 224, 219);
+}
+#services .box {
+  border: 2px solid brown;
+  padding:27px;
+  margin: 20px 9px;
+  border-radius: 23px;
+  background-color: #f2f2f2;
+  margin-bottom: 64px;
+}
+
+#services .box img {
+  height: 128px;
+  display: block;
+  margin: auto;
+}
+
+/* Client section */
+
+#client-section {
+  height: 215px;
+  position: relative;
+}
+
+#clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clients img {
+  height: 100px;
+}
+
+.client-item{
+  padding: 34px;
+}
+
+#client-section::before{
+  content: " ";
+  background: url('../bg.jpg');
+  width: 100%;
+  height:642px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Contact section */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9s;
+  background: url('../contact.jpg')no-repeat center center/cover;
+}
+
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  background-color: aliceblue;
+} 
+
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box form{
+  width:40%;
+}
+
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+#contact-box  textarea{
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+
+/* utility clases */
+.center {
+  text-align: center;
+}
+
+.h1-primary {
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 23px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h-secondary {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 23px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+  background-color: brown;
+  border-radius: 10px;
+  padding: 3px 13px;
+  font-size: 18px;
+  border: 1px solid white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 19px;
+  cursor: pointer;
+}
